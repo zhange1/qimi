@@ -1,0 +1,143 @@
+*{  box-sizing:border-box;}
+body,h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style:none;
+}
+body {font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;}
+a{
+    text-decoration:none;
+    color:#000;
+}
+img{
+    max-width:100%;
+    vertical-align: middle;
+}
+.flex--around{
+    display:flex;
+    justify-content: space-around;
+}
+body{padding-top:62px}
+/*导航*/
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#1D1D1D;
+    padding:10px 0;
+    z-index:100;
+}
+div.right{
+    width:60%;
+
+}
+div.right a{
+    color:#fff;
+    height:100%;
+}
+/*轮播区域*/
+div.box{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+    min-height: 100px;
+}
+ul.img{
+    position:relative;
+    width:400%;
+    display: flex;
+    justify-content: flex-start;
+}
+ul.circle{
+    position:relative;
+    width:100%;
+    text-align: center;
+    bottom:20px;
+    left:0;
+    font-size:0;
+}
+ul.circle li{
+    width:18px;
+    height:18px;
+    border:2px solid #B1B5B6;
+    border-radius:50%;
+    display: inline-block;
+    margin:0  3px;
+    cursor:pointer;
+}
+ul.circle li.on{
+    border-color:#fff;
+}
+/*****************/
+ul.develop{
+    margin-top:20px;
+    width:100%;
+    text-align: center;
+}
+ul.develop li{
+    position: relative;
+}
+ul.develop span{
+    position:absolute;
+    display:inline-block;
+}
+span.phone{
+    background:url('../image/show-img1.png') no-repeat;
+    width:26px;
+    height:43px;
+    top:25px;
+    left:50px;
+}
+span.wx{
+    background:url('../image/show-img2.png') no-repeat;
+    width:49px;
+    height:43px;
+    top:25px;
+    left:40px;
+}
+span.wap{
+    background:url('../image/show-img3.png') no-repeat;
+    width:41px;
+    height:40px;
+    top:30px;
+    left:45px;
+}
+span.web{
+    background:url('../image/show-img4.png') no-repeat;
+    width:32px;
+    height:43px;
+    top:25px;
+    left:50px;
+}
+ul.develop div:hover span.phone{
+    background:url('../image/show-img1-1.png') no-repeat;
+}
+ul.develop div:hover span.wx{
+    background:url('../image/show-img2-1.png') no-repeat;
+}
+ul.develop div:hover span.wap{
+    background:url('../image/show-img3-1.png') no-repeat;
+}
+ul.develop div:hover span.web{
+    background:url('../image/show-img4-1.png') no-repeat;
+}
+/*****/
+div.ofc-o{
+    width:100%;
+    position: relative;
+    height:670px;
+    margin-top:20px;
+    text-align: center;
+}
+div.ofc-o h1{
+    color:#01A8DF;
+}
+div.ofc-o img.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
